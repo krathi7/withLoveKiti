@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+  <title>Garlic Breadsticks | withLoveKiti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+
+    <div class="nav-left">
+      <img src="logo.png" class="logo-img" alt="withLoveKiti logo">
+    </div>
+
+    <div class="nav-right-group">
+      <nav class="nav-center">
+        <a href="index.html">My Recipes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="https://in.pinterest.com/withlovekiti/" target="_blank">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="content">
+
+
+    <section class="recipe">
+
+      <h1 class="recipe-title">Garlic Breadsticks</h1>
+
+      <!-- COOKIE RATING -->
+      <p class="rating-text">
+        Did you enjoy this recipe? <br>
+        Rate it with cookies 🍪
+      </p>
+
+      <div class="rating cookies" data-rating="0">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="1">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="2">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="3">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="4">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="5">
+      </div>
+
+      <!-- RECIPE IMAGE -->
+      <div class="recipe-image">
+        <img src="images/recipe1.png" alt="Garlic Breadsticks">
+      </div>
+
+      <!-- TIME BADGES -->
+      <div class="time-info">
+        <div class="time-box">
+          <img src="icons/prep.png" alt="Prep time" class="time-icon">
+          <span class="time-label">Prep Time</span>
+          <span class="time-value">15 mins</span>
+        </div>
+
+        <div class="time-box">
+          <img src="icons/cook.png" alt="Cook time" class="time-icon">
+          <span class="time-label">Cook Time</span>
+          <span class="time-value">18 mins</span>
+        </div>
+
+        <div class="time-box">
+          <img src="icons/total.png" alt="Total time" class="time-icon">
+          <span class="time-label">Total Servings</span>
+          <span class="time-value">33 mins</span>
+        </div>
+      </div>
+
+
+      <!-- INGREDIENT CHECKLIST -->
+      <div class="ingredients">
+        <h3>For the Dough</h3>
+        <ul class="ingredients-list">
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            1 cup maida / all-purpose flour
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            ½ tsp salt
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            1 tsp sugar
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            ½ tsp active dry yeast
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            ¼ cup warm milk
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            ¼ cup warm water
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            ½ tsp garlic powder
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            ½ tsp oregano
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            ½ tsp chilli flakes
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            1 tbsp finely chopped coriander leaves
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            1 tbsp melted butter
+          </li>
+        </ul>
+      </div>
+      <div class="ingredients">
+        <h3>For the Garlic Butter</h3>
+        <ul class="ingredients-list">
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            2 tbsp butter (softened)
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            1 tbsp finely minced garlic cloves
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            1 tbsp chopped coriander leaves
+          </li>
+          <li>
+            <span class="heart" onclick="toggleHeart(this)">🤍</span>
+            A pinch of salt
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- METHOD -->
+      <div class="method">
+        <h3>Method</h3>
+
+        <ol class="method-steps">
+          <li>
+            In a bowl, mix warm milk, warm water, sugar, and yeast.
+            Let it sit for 8–10 minutes until foamy.
+          </li>
+
+          <li>
+            In a large bowl, add maida, salt, garlic powder, oregano,
+            chilli flakes, and coriander leaves.
+            Add the yeast mixture and melted butter.
+          </li>
+
+          <li>
+            Transfer the dough to a clean surface and knead for
+            10–15 minutes until soft and smooth.
+            If the dough feels too wet, add extra flour little by little
+            (up to ⅓ cup max) while kneading.
+          </li>
+
+          <li>
+            Lightly grease a bowl with oil, place the dough inside,
+            coat it lightly with oil, and cover.
+            Let it rest in a warm place for 1 hour until doubled in size.
+          </li>
+
+          <li>
+            To prepare the garlic butter, soften the butter slightly.
+            You can lightly fry the garlic cloves and smash them,
+            or use raw minced garlic directly.
+            Add oregano, chilli flakes, coriander leaves, and salt,
+            and mix well until creamy and aromatic.
+          </li>
+
+          <li>
+            Punch down the dough,divide into 2 balls, roll it out,  shape it into a semi-circle, lightly cut lines to divide into equal
+            serving strips, place it on a lined tray, let it rest for 15 minutes, and apply garlic butter generously
+            before baking.</li>
+
+          <li>
+            Bake in a preheated oven at <strong>200°C</strong> for
+            <strong>20–25 minutes</strong> until golden.
+            If the bottom looks undercooked, carefully flip the bread
+            and bake again for 5 minutes at 200°C.
+            Once fully baked, brush with more garlic butter while hot.
+          </li>
+        </ol>
+
+
+    </section>
+
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <!-- FOOTER TOP STRIP -->
+    <div class="footer-top">
+      <p>made at home, <em>with love ♡</em></p>
+    </div>
+
+    <!-- FOOTER MAIN -->
+    <div class="footer-main">
+
+      <!-- Social icons -->
+      <div class="footer-socials">
+
+        <a href="https://in.pinterest.com/withlovekiti/"><i class="fab fa-pinterest-p"></i></a>
+
+      </div>
+      <br>
+
+      <!-- Footer links -->
+      <nav class="footer-links">
+        <a href="index.html">My Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <!-- Email -->
+      <p class="footer-email">withlovekiti@gmail.com</p>
+
+      <!-- Divider -->
+      <div class="footer-divider"></div>
+
+      <!-- Copyright -->
+      <p class="footer-copy">
+        © 2025 withLoveKiti. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
