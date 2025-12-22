@@ -92,10 +92,11 @@ body {
 
 /* INGREDIENTS */
 .ingredients h3 {
-  color: #4A3A2A;
+  color: #6A3E37;        /* solid warm brown */
   font-size: 20px;
   margin-bottom: 14px;
 }
+
 
 .ingredients-list {
   list-style: none;
@@ -109,6 +110,18 @@ body {
   margin: 14px 0;
   font-size: 15px;
 }
+
+.ingredients h3::after {
+  content: "";
+  color: #6A3E37 !important;
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(106, 62, 55, 0.4);
+  margin-top: 6px;
+}
+
+
 /* COOKIE RATING */
 .rating.cookies {
   display: flex;
@@ -475,3 +488,57 @@ body {
   line-height: 1.8;
   opacity: 0.9;
 }
+
+/* =========================
+   MOBILE NAVBAR
+========================= */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 16px 20px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .logo-img {
+    height: 90px; /* smaller logo on mobile */
+  }
+
+  .nav-right-group {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .nav-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-center a {
+    font-size: 18px;   /* smaller text */
+    margin: 8px 12px;
+  }
+
+  .nav-right {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+/* MOBILE RECIPE TITLE */
+@media (max-width: 768px) {
+  .recipe-title {
+    font-size: 40px;
+    line-height: 1.2;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-title {
+    font-size: 32px;
+  }
+}
+
