@@ -586,4 +586,131 @@ body {
   }
 }
 
+/* =========================
+   CONTACT PAGE
+========================= */
 
+.contact-box {
+  max-width: 1000px;
+  margin: 60px auto;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  background: #FFFDF9;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* LEFT FORM */
+.contact-form {
+  flex: 1;
+}
+
+.contact-form h1 {
+  color: #6A3E37;
+  margin-bottom: 10px;
+}
+
+.contact-note {
+  font-style: italic;
+  margin-bottom: 22px;
+  opacity: 0.85;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 85%;              /* 👈 NOT full width */
+  max-width: 420px;        /* 👈 keeps it elegant */
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  border: 1px solid #E2CFCB;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+}
+
+
+.contact-form button {
+  background: #6A3E37;
+  color: #fff;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 14px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* RIGHT IMAGE */
+.contact-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-image img {
+  max-width: 280px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+    padding: 32px;
+  }
+
+  .contact-image {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+/* =========================
+   PEEPING IMAGE EFFECT
+========================= */
+
+.contact-box {
+  position: relative;      /* allows absolute positioning inside */
+  overflow: hidden;        /* hides the part that goes outside */
+}
+
+/* Push image to the right */
+.contact-image {
+  position: absolute;
+  right: -20px;            /* 👈 pushes image outside */
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Control image size */
+.contact-image img {
+  max-width: 300px;
+}
+
+/* MOBILE: disable peeking and center image */
+@media (max-width: 768px) {
+  .contact-image {
+    position: static;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .contact-image img {
+    max-width: 320px;
+  }
+}
+/* FORCE CONTACT FIELDS TO STACK */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+/* FIX CONTACT BUTTON WIDTH */
+.contact-form button {
+  width: fit-content;      /* 👈 prevents full width */
+  padding: 14px 32px;
+  margin-top: 10px;
+}
