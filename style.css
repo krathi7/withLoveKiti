@@ -123,11 +123,18 @@ body {
 
 
 /* COOKIE RATING */
+
 .rating.cookies {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  margin: 12px 0 24px;
+  justify-content: center;
+}
+
+/* MOBILE COOKIE RATING */
+@media (max-width: 768px) {
+  .rating.cookies {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .cookie-icon {
@@ -539,6 +546,22 @@ body {
 @media (max-width: 480px) {
   .recipe-title {
     font-size: 32px;
+  }
+}
+/* CENTER TIME BADGES ON MOBILE */
+@media (max-width: 768px) {
+  .time-info {
+    display: flex;
+    flex-direction: column;     
+    align-items: center;        
+    gap: 20px;
+    margin: 30px auto 40px;
+  }
+
+  .time-box {
+    width: 85%;                 
+    max-width: 320px;
+    text-align: center;
   }
 }
 
