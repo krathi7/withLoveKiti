@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVC3CGWN1R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FVC3CGWN1R');
+  </script>
+
+  <title>Masala Maggi | withLoveKiti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" class="logo-img" alt="withLoveKiti logo">
+    </div>
+
+    <div class="nav-right-group">
+      <nav class="nav-center">
+        <a href="index.html">My Recipes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="https://in.pinterest.com/withlovekiti/" target="_blank">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <section class="recipe">
+
+      <h1 class="recipe-title">Masala Maggi</h1>
+
+      <!-- RATING -->
+      <p class="rating-text">
+        Did you enjoy this recipe? <br>
+        Rate it with cookies 🍪
+      </p>
+
+      <div class="rating cookies" data-rating="0">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="1">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="2">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="3">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="4">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="5">
+      </div>
+
+      <!-- RECIPE IMAGE -->
+      <div class="recipe-image">
+        <img src="images/maggi.png" alt="Masala Maggi">
+      </div>
+
+      <!-- TIME INFO -->
+      <div class="time-info">
+        <div class="time-box">
+          <img src="icons/prep.png" alt="Prep time" class="time-icon">
+          <span class="time-label">Prep Time</span>
+          <span class="time-value">10 mins</span>
+        </div>
+
+        <div class="time-box">
+          <img src="icons/cook.png" alt="Cook time" class="time-icon">
+          <span class="time-label">Cook Time</span>
+          <span class="time-value">10 mins</span>
+        </div>
+
+        <div class="time-box">
+          <img src="icons/total.png" alt="Servings" class="time-icon">
+          <span class="time-label">Servings</span>
+          <span class="time-value">1–2 people</span>
+        </div>
+      </div>
+
+      <!-- INGREDIENTS -->
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <ul class="ingredients-list">
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 pack Maggi noodles (with tastemaker)</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 green chilli, finely chopped</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 onion, finely chopped</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 tomato, finely chopped</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>½ carrot, finely chopped</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>½ capsicum (or 1 small capsicum), chopped</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>2–3 curry leaves</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 tbsp oil</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>¼ tsp salt (adjust carefully)</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 tsp red chilli powder</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>¼ tsp turmeric powder (haldi)</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>½ tsp coriander powder</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>½ tsp cumin powder</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>Coriander leaves, for garnish</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>2 glasses water (see note below)</li>
+        </ul>
+      </div>
+
+      <!-- METHOD -->
+      <div class="method">
+        <h3>Method</h3>
+
+        <ol class="method-steps">
+          <li>
+            Heat oil in a pan on medium flame. Add cumin seeds and let them splutter.
+          </li>
+
+          <li>
+            Add chopped green chilli and curry leaves. Sauté for a few seconds until aromatic.
+          </li>
+
+          <li>
+            Add onion, tomato, carrot, and capsicum. Fry for about 2 minutes until slightly soft.
+          </li>
+
+          <li>
+            Add ¼ tsp salt (do not add too much as Maggi masala already contains salt).
+          </li>
+
+          <li>
+            Add red chilli powder, turmeric powder, coriander powder, and cumin powder.
+            Mix well and sauté for 1 minute.
+          </li>
+
+          <li>
+            Pour in 2 glasses of water and add the Maggi tastemaker. Bring to a boil.
+          </li>
+
+          <li>
+            Add the noodle cake and cook until the noodles are soft and well coated with masala.
+          </li>
+
+          <li>
+            Turn off the flame and garnish with freshly chopped coriander leaves.
+          </li>
+        </ol>
+
+        <p><strong>Note:</strong> If using <strong>2 packs of Maggi</strong>, use <strong>2.5 glasses of water</strong>.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <p>made at home, <em>shared with love ♡</em></p>
+    </div>
+
+    <div class="footer-main">
+
+      <div class="footer-socials">
+        <a href="https://in.pinterest.com/withlovekiti/">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
+      <br>
+
+      <nav class="footer-links">
+        <a href="index.html">My Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <p class="footer-email">withlovekiti@gmail.com</p>
+
+      <div class="footer-divider"></div>
+
+      <p class="footer-copy">
+        © 2025 withLoveKiti. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
+
