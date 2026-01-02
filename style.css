@@ -714,3 +714,53 @@ body {
   padding: 14px 32px;
   margin-top: 10px;
 }
+/* Jump to Recipe */
+.jump-links a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #eef0e8;
+  font-weight: 500;
+}
+
+.jump-links a:hover {
+  text-decoration: underline;
+}
+
+/* Recipe Story Box */
+.recipe-story-box {
+  background-color: #FFF7F4;
+  border: 1.5px solid #D9A6A0;
+  border-radius: 16px;
+  padding: 22px 26px;
+  margin: 30px 0;
+}
+
+.recipe-story-box h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.recipe-story-box p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+/* Jump to Recipe Button */
+.jump-btn {
+  display: block;          /* make it a block element */
+  margin: 16px auto 28px;
+  padding: 10px 18px;
+  background-color: #6B7A3C; /* olive */
+  color: #802727;
+  font-size: 14px;
+  text:white;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 999px; /* pill shape = cute */
+  transition: all 0.25s ease;
+  width: fit-content; 
+}
+
+.jump-btn:hover {
+  background-color: #8aad67;
+  transform: translateY(-2px); /* soft lift */
+}
