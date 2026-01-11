@@ -446,16 +446,39 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* ABOUT PAGE - LETTER STYLE */
 .about-page {
   max-width: 720px;
-  margin: 40px auto;              /* reduced gap from navbar */
-  padding: 40px 44px 48px;
-  background: #FFFDF9;
-  border: 1.5px solid rgba(107, 116, 67, 0.25);
+  margin: 40px auto;
+
+  /* padding creates space for top & bottom images */
+  padding: 220px 44px 220px;
+
+  background-image:
+    url("images/paper-top.jpg"),
+    url("images/paper-mid.jpg"),
+    url("images/paper-bottom.jpg");
+
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+
+  background-position:
+    top center,
+    center center,
+    bottom center;
+
+  background-size:
+    100% auto,
+    100% auto,
+    100% auto;
+
   border-radius: 18px;
+  border: 1.5px solid rgba(107, 116, 67, 0.25);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
+
+
 
 /* LETTER TOP IMAGE */
 .letter-image {
@@ -482,9 +505,10 @@ body {
 .about-page p {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 2;
+  line-height: 2.3;
   color: #6A3E37;
   margin-bottom: 26px;
+  font-weight: 500;
 }
 
 /* SIGNATURE */
@@ -680,7 +704,7 @@ body {
 /* Push image to the right */
 .contact-image {
   position: absolute;
-  right: -62px;            /* 👈 pushes image outside */
+  right: 1px;            /* 👈 pushes image outside */
   bottom: 0;
   display: flex;
   align-items: flex-end;
@@ -688,7 +712,7 @@ body {
 
 /* Control image size */
 .contact-image img {
-  max-width: 300px;
+  max-width: 400px;
 }
 
 /* MOBILE: disable peeking and center image */
@@ -763,3 +787,15 @@ body {
   background-color: #8aad67;
   transform: translateY(-2px); /* soft lift */
 }
+
+@media (max-width: 900px) {
+  .about-page p {
+    font-size: 14.5px;
+    font-weight: 500;
+    line-height: 1.85;
+  }
+}
+
+
+
+
