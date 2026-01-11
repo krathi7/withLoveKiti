@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <title>Sooji Ka Halwa / Sheera | withLoveKiti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="nav-left">
+      <img src="logo.png" class="logo-img" alt="withLoveKiti logo">
+    </div>
+
+    <div class="nav-right-group">
+      <nav class="nav-center">
+        <a href="index.html">My Recipes</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-right">
+        <a href="https://in.pinterest.com/withlovekiti/" target="_blank">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <section class="recipe">
+
+      <h1 class="recipe-title">Sooji Ka Halwa / Sheera</h1>
+      <p class="jump-links">
+        <a href="#ingredients" class="jump-btn">Jump to Recipe ↓</a>
+      </p>
+
+      <!-- RATING -->
+      <p class="rating-text">
+        Did you enjoy this recipe? <br>
+        Rate it with cookies 🍪
+      </p>
+
+      <div class="rating cookies" data-rating="0">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="1">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="2">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="3">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="4">
+        <img src="icons/cookie-white.png" class="cookie-icon" data-value="5">
+      </div>
+
+      <!-- RECIPE IMAGE -->
+      <div class="recipe-image">
+        <img src="images/sheera.png" alt="Sooji Ka Halwa / Sheera">
+      </div>
+
+      <!-- RECIPE STORY -->
+      <div class="recipe-story-box">
+        <h3>Why I love this Recipe~</h3>
+
+        <p>
+          Ever since I was a kid, sheera has held a very special place in my heart.
+          It’s one of those dishes that instantly takes me back to home, family,
+          and slow, peaceful mornings.
+        </p>
+
+        <p>
+          My mom and granny would make sooji ka halwa on auspicious occasions,
+          small celebrations, or whenever something felt worth celebrating —
+          even the little things. Watching them roast the sooji patiently in ghee
+          and letting the kitchen fill with that warm aroma is a memory I’ll always cherish.
+        </p>
+
+        <p>
+          During poojas, this sheera would often be made as prasadam.
+          Served warm, slightly sweet, and full of love — it felt comforting in a way
+          that words can’t really explain. Every bite felt soft, gentle, and soothing.
+        </p>
+
+        <p>
+          Simple, humble, and deeply nostalgic — that’s what this halwa is to me.
+          And that’s exactly why I wanted to share this recipe here,
+          hoping it brings you the same warmth and comfort it brings me.
+        </p>
+      </div>
+
+      <!-- TIME INFO -->
+      <div class="time-info">
+        <div class="time-box">
+          <img src="icons/prep.png" alt="Prep time" class="time-icon">
+          <span class="time-label">Prep Time</span>
+          <span class="time-value">5 mins</span>
+        </div>
+
+        <div class="time-box">
+          <img src="icons/cook.png" alt="Cook time" class="time-icon">
+          <span class="time-label">Cook Time</span>
+          <span class="time-value">15 mins</span>
+        </div>
+
+        <div class="time-box">
+          <img src="icons/total.png" alt="Servings" class="time-icon">
+          <span class="time-label">Servings</span>
+          <span class="time-value">2–3 people</span>
+        </div>
+      </div>
+
+      <!-- INGREDIENTS -->
+      <div class="ingredients" id="ingredients">
+        <h3>Ingredients</h3>
+        <ul class="ingredients-list">
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 cup semolina (sooji)</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>2–3 tbsp ghee</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>½ cup milk</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>½ cup water</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>1 cup sugar</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>¼ tsp cardamom powder</li>
+          <li><span class="heart" onclick="toggleHeart(this)">🤍</span>Dry fruits of choice (cashews, almonds, raisins)</li>
+        </ul>
+      </div>
+
+      <!-- METHOD -->
+      <div class="method">
+        <h3>Method</h3>
+
+        <ol class="method-steps">
+          <li>
+            Heat ghee in a heavy-bottom pan on low to medium flame.
+            Add the semolina and roast slowly, stirring continuously,
+            until it becomes aromatic and slightly changes color.
+          </li>
+
+          <li>
+            Carefully add the milk and water mixture.
+            Stir well to avoid lumps and let the sooji absorb all the liquid.
+          </li>
+
+          <li>
+            Once the mixture thickens, add sugar and mix well.
+            The halwa will loosen at first — keep stirring patiently.
+          </li>
+
+          <li>
+            Cook until the halwa thickens again and starts leaving the sides of the pan.
+          </li>
+
+          <li>
+            Add cardamom powder and dry fruits. Mix well and cook for another minute.
+          </li>
+
+          <li>
+            Switch off the flame and serve warm.
+            You can add a little extra ghee on top if you like.
+          </li>
+        </ol>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-top">
+      <p>made at home, <em>shared with love ♡</em></p>
+    </div>
+
+    <div class="footer-main">
+
+      <div class="footer-socials">
+        <a href="https://in.pinterest.com/withlovekiti/">
+          <i class="fab fa-pinterest-p"></i>
+        </a>
+      </div>
+      <br>
+
+      <nav class="footer-links">
+        <a href="index.html">My Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+      </nav>
+
+      <p class="footer-email">withlovekiti@gmail.com</p>
+
+      <div class="footer-divider"></div>
+
+      <p class="footer-copy">
+        © 2025 withLoveKiti. All Rights Reserved.
+      </p>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
